@@ -47,7 +47,7 @@ type CollectResp struct {
 }
 
 func GetCollectsRetry() (model.Collect, error) {
-	count := len(address.GetHTTPAddresses("monapi"))
+	count := len(address.GetHTTPAddresses("eye"))
 	var resp CollectResp
 	var err error
 	for i := 0; i < count; i++ {
@@ -65,7 +65,7 @@ func GetCollectsRetry() (model.Collect, error) {
 }
 
 func getCollects() (CollectResp, error) {
-	addrs := address.GetHTTPAddresses("monapi")
+	addrs := address.GetHTTPAddresses("eye")
 	i := rand.Intn(len(addrs))
 	addr := addrs[i]
 

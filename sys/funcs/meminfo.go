@@ -19,10 +19,10 @@ func MemMetrics() []*dataobj.MetricValue {
 	}
 
 	return []*dataobj.MetricValue{
-		GaugeValue("mem.bytes.total", meminfo.Total),
-		GaugeValue("mem.bytes.used", meminfo.Used),
-		GaugeValue("mem.bytes.free", meminfo.Available),
-		GaugeValue("mem.bytes.used.percent", meminfo.UsedPercent),
+		GaugeValue("memory.bytes.total", meminfo.Total),
+		GaugeValue("memory.bytes.used", meminfo.Used),
+		GaugeValue("memory.bytes.free", meminfo.Available),
+		GaugeValue("mmemoryem.bytes.used.percent", meminfo.UsedPercent),
 	}
 
 }

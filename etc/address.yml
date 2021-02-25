@@ -1,5 +1,5 @@
 ---
-monapi:
+eye:
   http: 0.0.0.0:8006
   addresses:
     - 192.168.0.100
@@ -7,11 +7,6 @@ monapi:
 transfer:
   http: 0.0.0.0:8008
   rpc: 0.0.0.0:8009
-  addresses:
-    - 192.168.0.100
-
-ams:
-  http: 0.0.0.0:8002
   addresses:
     - 192.168.0.100
 

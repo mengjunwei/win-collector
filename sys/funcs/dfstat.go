@@ -47,7 +47,7 @@ func deviceMetrics(ignoreMountPointsPrefix []string) (L []*dataobj.MetricValue) 
 		L = append(L, GaugeValue("disk.bytes.total", du.Total, tags))
 		L = append(L, GaugeValue("disk.bytes.used", du.Used, tags))
 		L = append(L, GaugeValue("disk.bytes.free", du.Free, tags))
-		L = append(L, GaugeValue("disk.bytes.used.percent", du.UsedPercent, tags))
+		L = append(L, GaugeValue("disk.bytes.used.percent.new", du.UsedPercent, tags))
 	}
 
 	if len(L) > 0 && diskTotal > 0 {
